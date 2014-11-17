@@ -1,38 +1,9 @@
 <?php $this->headLink()->prependStylesheet($this->basePath() . '/css/dashboard/c-theme.css') ?>
 <div class="page-header"><h2><?php echo $this->translate("Dashboard") ?></h2></div>
 <div class="row">
-    <div class="col-md-4">
-        <div class="panel panel-default c-dash-panel">
-           <div class="panel-heading">Performance</div>
-           <div class="panel-body">
-               <div class="row">
-                   <div class="col-md-5">
-                       <span class="c-score-lg c-score c-kpi-score">100</span>
-                       <span class="glyphicon glyphicon-arrow-up c-above-goal c-goal-indicator-lg"></span>
-                   </div>
-                   <div class="col-md-7">
-                       <table class="table table-responsive table-bordered">
-                           <tr>
-                               <td class="c-label c-sub-kpi-label">Parts / Labor Ratio</td><td class="c-sub-kpi-score c-score">23</td>
-                           </tr>
-                           <tr>
-                               <td class="c-label c-sub-kpi-label">Part Sales</td><td class="c-sub-kpi-score c-score">23</td>
-                           </tr>
-                           <tr>
-                               <td class="c-label c-sub-kpi-label">Parts Gross Profit</td><td class="c-sub-kpi-score c-score">23</td>
-                           </tr>
-                           <tr>
-                               <td class="c-label c-sub-kpi-label">Parts Gross Profit %</td><td class="c-sub-kpi-score c-score">23</td>
-                           </tr>
-                       </table>
-                   </div>
-               </div>
-           </div>
-            <div class="panel-footer">
-                <a class="btn btn-default">Actions</a>
-            </div>
-        </div>
-    </div>
-
-
+    <?php
+        for ($i = 0; $i < 6; $i++ ) {
+            echo $this->kpiPanel;
+        }
+    ?>
 </div>

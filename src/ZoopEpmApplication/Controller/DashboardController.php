@@ -16,6 +16,16 @@ class DashboardController extends AbstractActionController
 {
     public function indexAction()
     {
-        return new ViewModel();
+        $view = new ViewModel();
+        $kpiPanel = new ViewModel();
+        $kpiPanel->setTemplate('zoop-epm-application/dashboard/partial/kpi-panel');
+        $view->addChild($kpiPanel,'kpiPanel');
+        return $view;
+    }
+
+    public function kpiAction()
+    {
+        $view = new ViewModel();
+        return $view;
     }
 }

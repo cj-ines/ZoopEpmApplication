@@ -15,7 +15,7 @@ return array(
                 'options' => array(
                     'route'    => '/',
                     'defaults' => array(
-                        'controller' => 'ZoopEpmApplication\Controller\Index',
+                        'controller' => 'ZoopEpmApplication\Controller\Dashboard',
                         'action'     => 'index',
                     ),
                 ),
