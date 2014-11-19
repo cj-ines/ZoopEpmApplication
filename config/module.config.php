@@ -75,6 +75,7 @@ return array(
         'invokables' => array(
             'ZoopEpmApplication\Controller\Index' => 'ZoopEpmApplication\Controller\IndexController',
             'ZoopEpmApplication\Controller\Dashboard' => 'ZoopEpmApplication\Controller\DashboardController',
+            'ZoopEpmApplication\Controller\Scoreboard' => 'ZoopEpmApplication\Controller\ScoreboardController',
         ),
     ),
     'view_manager' => array(
