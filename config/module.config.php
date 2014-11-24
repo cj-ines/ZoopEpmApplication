@@ -13,7 +13,7 @@ return array(
             'home' => array(
                 'type' => 'Zend\Mvc\Router\Http\Literal',
                 'options' => array(
-                    'route'    => '/',
+                    'route'    => '/epm',
                     'defaults' => array(
                         'controller' => 'ZoopEpmApplication\Controller\Dashboard',
                         'action'     => 'index',
